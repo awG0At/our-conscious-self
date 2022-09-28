@@ -16,6 +16,8 @@
 		79101F5528E215FF00BFED8B /* our_conscious_selfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79101F5428E215FF00BFED8B /* our_conscious_selfTests.swift */; };
 		79101F5F28E215FF00BFED8B /* our_conscious_selfUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79101F5E28E215FF00BFED8B /* our_conscious_selfUITests.swift */; };
 		79101F6128E215FF00BFED8B /* our_conscious_selfUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79101F6028E215FF00BFED8B /* our_conscious_selfUITestsLaunchTests.swift */; };
+		79101F6E28E4A99300BFED8B /* MyDog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79101F6D28E4A99300BFED8B /* MyDog.swift */; };
+		79101F7028E4AA0D00BFED8B /* MyFriends.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79101F6F28E4AA0D00BFED8B /* MyFriends.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		79101F5A28E215FF00BFED8B /* our conscious selfUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "our conscious selfUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79101F5E28E215FF00BFED8B /* our_conscious_selfUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = our_conscious_selfUITests.swift; sourceTree = "<group>"; };
 		79101F6028E215FF00BFED8B /* our_conscious_selfUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = our_conscious_selfUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		79101F6D28E4A99300BFED8B /* MyDog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDog.swift; sourceTree = "<group>"; };
+		79101F6F28E4AA0D00BFED8B /* MyFriends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFriends.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				79101F3F28E215FE00BFED8B /* SceneDelegate.swift */,
 				79101F4128E215FE00BFED8B /* ViewController.swift */,
 				79101F4328E215FE00BFED8B /* Main.storyboard */,
+				79101F6F28E4AA0D00BFED8B /* MyFriends.swift */,
+				79101F6D28E4A99300BFED8B /* MyDog.swift */,
 				79101F4628E215FF00BFED8B /* Assets.xcassets */,
 				79101F4828E215FF00BFED8B /* LaunchScreen.storyboard */,
 				79101F4B28E215FF00BFED8B /* Info.plist */,
@@ -260,6 +266,8 @@
 			files = (
 				79101F4228E215FE00BFED8B /* ViewController.swift in Sources */,
 				79101F3E28E215FE00BFED8B /* AppDelegate.swift in Sources */,
+				79101F6E28E4A99300BFED8B /* MyDog.swift in Sources */,
+				79101F7028E4AA0D00BFED8B /* MyFriends.swift in Sources */,
 				79101F4028E215FE00BFED8B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,6 +445,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9D3NKWCHB9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "our conscious self/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -464,6 +473,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9D3NKWCHB9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "our conscious self/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
