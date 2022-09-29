@@ -95,5 +95,7 @@ class ViewController: UIViewController {
             tendency.text = ""
         }
     }
+    
 }
+
 
