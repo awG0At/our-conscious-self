@@ -9,6 +9,8 @@ public var state:String = "ST0"
 class ViewController: UIViewController {
     @IBOutlet weak var myPic: UIImageView!
     
+    @IBOutlet weak var whatIs: UIButton!
+    
     @IBOutlet weak var briggsMeyers: UILabel!
     
     @IBOutlet weak var tendency: UILabel!
@@ -26,6 +28,8 @@ class ViewController: UIViewController {
         tendency.text = ""
         briggsMeyers.text = ""
         self.view.backgroundColor = UIColor.lightGray
+        whatIs.isHidden = true
+        UIApplication.shared.isIdleTimerDisabled = true
     }
     @IBOutlet weak var text: UITextView!
     
@@ -81,7 +85,7 @@ class ViewController: UIViewController {
     
     @IBAction func sliderValueChanged(_ sender: UISlider) {
         let currentValue = Int(sender.value)
-            print("Slider changing to \(currentValue) ?")
+            //print("Slider changing to \(currentValue) ?")
         if currentValue == 0{
             label.textColor = UIColor.black
         }else if currentValue == 1{
@@ -91,8 +95,10 @@ class ViewController: UIViewController {
     @IBAction func switchValueChanged(_ sender: UISwitch) {
         if uiSwitch.isOn{
             tendency.text = "tendency = 'Upholder'"
+            whatIs.isHidden = false
         }else{
             tendency.text = ""
+            whatIs.isHidden = true
         }
     }
     

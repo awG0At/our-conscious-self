@@ -36,7 +36,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="I value enjoying myself." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="BOW-PP-w8b">
                                 <rect key="frame" x="94" y="717" width="240" height="184"/>
                                 <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="TSA-68-YmM">
@@ -82,7 +82,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" systemColor="systemBrownColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="My Dog"/>
+                                <buttonConfiguration key="configuration" style="filled" title="My Dog">
+                                    <color key="baseBackgroundColor" systemColor="systemBrownColor"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <segue destination="FmV-2D-M2H" kind="show" id="2qt-1E-ILN"/>
                                 </connections>
@@ -92,7 +94,10 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.61647790670000002" green="0.4523178397" blue="0.45777307789999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="My Friends"/>
+                                <buttonConfiguration key="configuration" style="filled" title="My Friends">
+                                    <color key="baseForegroundColor" systemColor="tertiarySystemBackgroundColor"/>
+                                    <color key="baseBackgroundColor" red="0.61647790670000002" green="0.4523178397" blue="0.45777307789999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <segue destination="AIH-Zt-pum" kind="show" id="fsN-cZ-t6x"/>
                                 </connections>
@@ -104,6 +109,15 @@
                                 <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rec-0U-DTy">
+                                <rect key="frame" x="73" y="427" width="131" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="what is this?"/>
+                                <connections>
+                                    <segue destination="4dy-63-AvD" kind="show" id="3WE-b3-5DG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -135,6 +149,7 @@
                         <outlet property="text" destination="BOW-PP-w8b" id="Jvr-pE-pxs"/>
                         <outlet property="uiSlider" destination="LKz-aW-n3a" id="ALN-ar-Yxa"/>
                         <outlet property="uiSwitch" destination="tbM-7U-XIw" id="Ogk-NC-JTT"/>
+                        <outlet property="whatIs" destination="Rec-0U-DTy" id="AuG-S7-7fw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -241,8 +256,116 @@
             </objects>
             <point key="canvasLocation" x="-1138.3177570093458" y="69.330453563714912"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="bMI-Ed-ofU">
+            <objects>
+                <viewController id="4dy-63-AvD" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qz7-ps-qsR">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vVa-If-Bw1">
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zJ7-Ti-p3H">
+                                        <rect key="frame" x="0.0" y="0.0" width="428" height="1300"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Overview of the Upholder Tendency" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fP6-hH-nwN">
+                                                <rect key="frame" x="8" y="26" width="354" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="vRK-IN-or5"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="INTP-T" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U5a-nD-88N">
+                                                <rect key="frame" x="176" y="483" width="77" height="23"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="77" id="wQW-QG-U1I"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="UR0-fw-ANY">
+                                                <rect key="frame" x="0.0" y="46" width="428" height="399"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="399" id="vXe-Rl-Dgb"/>
+                                                </constraints>
+                                                <mutableString key="text">
+    Upholders readily respond to both external and internal expectations. They think expectations, in general, are important, and enjoy fulfilling both their own and others’. They find it easy to take action and follow-through, and have no problem forming habits. They like schedules, routines, and rules. They dislike making mistakes or letting themselves or others down.
+
+   If their boss asks them to stay late to finish a project and they know it’s important, they’ll stay (fulfilling external expectations); but if their boss last-minute asks them to stay late to finish a project and the Upholder has a lecture that evening that they signed up for months ago and are excited about, they’ll most likely go to the lecture, and work on the project later (fulfilling internal expectations).                                            -shortform.com/blog/upholder-tendency/ </mutableString>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="LogicianPersonality" translatesAutoresizingMaskIntoConstraints="NO" id="glg-C6-kbz">
+                                                <rect key="frame" x="8" y="514" width="412" height="173"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="173" id="y4T-bh-Uvm"/>
+                                                </constraints>
+                                            </imageView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="KSL-0j-beM">
+                                                <rect key="frame" x="0.0" y="726" width="428" height="175"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="175" id="OhB-uD-sPR"/>
+                                                </constraints>
+                                                <mutableString key="text">Logicians pride themselves on their unique perspectives and vigorous intellect. They can’t help but puzzle over the mysteries of the universe – which may explain why some of the most influential philosophers and scientists of all time have been Logicians. This personality type is fairly rare, but with their creativity and inventiveness, Logicians aren’t afraid to stand out from the crowd.
+                           -16personalities.com/intp-personality</mutableString>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="UR0-fw-ANY" secondAttribute="trailing" id="8aQ-qt-E6R"/>
+                                            <constraint firstItem="fP6-hH-nwN" firstAttribute="top" secondItem="zJ7-Ti-p3H" secondAttribute="top" constant="26" id="Ake-NF-qYf"/>
+                                            <constraint firstAttribute="height" constant="1300" id="Dem-5n-cxn"/>
+                                            <constraint firstItem="KSL-0j-beM" firstAttribute="leading" secondItem="UR0-fw-ANY" secondAttribute="leading" id="EBN-5g-z04"/>
+                                            <constraint firstItem="glg-C6-kbz" firstAttribute="centerX" secondItem="U5a-nD-88N" secondAttribute="centerX" id="H8S-uk-zoK"/>
+                                            <constraint firstItem="U5a-nD-88N" firstAttribute="top" secondItem="UR0-fw-ANY" secondAttribute="bottom" constant="38" id="LPd-85-W94"/>
+                                            <constraint firstItem="fP6-hH-nwN" firstAttribute="leading" secondItem="zJ7-Ti-p3H" secondAttribute="leadingMargin" id="OdC-u1-chN"/>
+                                            <constraint firstItem="glg-C6-kbz" firstAttribute="leading" secondItem="fP6-hH-nwN" secondAttribute="leading" id="P4U-1x-UjT"/>
+                                            <constraint firstItem="KSL-0j-beM" firstAttribute="trailing" secondItem="UR0-fw-ANY" secondAttribute="trailing" id="TDm-1c-DS8"/>
+                                            <constraint firstItem="glg-C6-kbz" firstAttribute="top" secondItem="U5a-nD-88N" secondAttribute="bottom" constant="8" symbolic="YES" id="aaN-O8-Gto"/>
+                                            <constraint firstItem="UR0-fw-ANY" firstAttribute="leading" secondItem="zJ7-Ti-p3H" secondAttribute="leading" id="gug-RB-QKO"/>
+                                            <constraint firstAttribute="bottom" secondItem="KSL-0j-beM" secondAttribute="bottom" constant="399" id="lnX-iW-bCm"/>
+                                            <constraint firstItem="U5a-nD-88N" firstAttribute="centerX" secondItem="UR0-fw-ANY" secondAttribute="centerX" id="ras-R7-0BK"/>
+                                            <constraint firstAttribute="trailing" secondItem="fP6-hH-nwN" secondAttribute="trailing" constant="66" id="tgi-X9-KKA"/>
+                                            <constraint firstItem="UR0-fw-ANY" firstAttribute="top" secondItem="zJ7-Ti-p3H" secondAttribute="top" constant="46" id="vYr-F7-x2j"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="zJ7-Ti-p3H" firstAttribute="top" secondItem="vVa-If-Bw1" secondAttribute="top" id="EKi-H0-Bh5"/>
+                                    <constraint firstItem="zJ7-Ti-p3H" firstAttribute="leading" secondItem="vVa-If-Bw1" secondAttribute="leading" id="IN7-9J-3hm"/>
+                                    <constraint firstAttribute="bottom" secondItem="zJ7-Ti-p3H" secondAttribute="bottom" id="Neu-SO-iCx"/>
+                                    <constraint firstAttribute="trailing" secondItem="zJ7-Ti-p3H" secondAttribute="trailing" id="svV-Dt-e8t"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pM7-zm-hjJ"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zJ7-Ti-p3H" firstAttribute="width" secondItem="Qz7-ps-qsR" secondAttribute="width" multiplier="0.981308" id="2aa-39-deB"/>
+                            <constraint firstItem="vVa-If-Bw1" firstAttribute="bottom" secondItem="pM7-zm-hjJ" secondAttribute="bottom" id="5uo-tw-WKY"/>
+                            <constraint firstItem="vVa-If-Bw1" firstAttribute="trailing" secondItem="pM7-zm-hjJ" secondAttribute="trailing" id="WQ6-8e-gIT"/>
+                            <constraint firstItem="vVa-If-Bw1" firstAttribute="top" secondItem="Qz7-ps-qsR" secondAttribute="top" id="awn-b4-rjv"/>
+                            <constraint firstItem="vVa-If-Bw1" firstAttribute="leading" secondItem="pM7-zm-hjJ" secondAttribute="leading" id="d21-Az-LCg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="0Yy-52-nqN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JHe-Hn-C0G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="16.822429906542055" y="804.75161987041042"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="LogicianPersonality" width="225" height="225"/>
         <image name="dog" width="868" height="838"/>
         <image name="frens" width="685" height="625"/>
         <image name="tbh" width="223" height="226"/>
@@ -266,6 +389,9 @@
         </systemColor>
         <systemColor name="systemGray4Color">
             <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>

@@ -18,6 +18,7 @@
 		79101F6128E215FF00BFED8B /* our_conscious_selfUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79101F6028E215FF00BFED8B /* our_conscious_selfUITestsLaunchTests.swift */; };
 		79101F6E28E4A99300BFED8B /* MyDog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79101F6D28E4A99300BFED8B /* MyDog.swift */; };
 		79101F7028E4AA0D00BFED8B /* MyFriends.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79101F6F28E4AA0D00BFED8B /* MyFriends.swift */; };
+		79EC01F128EDE54000F7DE54 /* brigs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EC01F028EDE54000F7DE54 /* brigs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		79101F6028E215FF00BFED8B /* our_conscious_selfUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = our_conscious_selfUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		79101F6D28E4A99300BFED8B /* MyDog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDog.swift; sourceTree = "<group>"; };
 		79101F6F28E4AA0D00BFED8B /* MyFriends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFriends.swift; sourceTree = "<group>"; };
+		79EC01F028EDE54000F7DE54 /* brigs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = brigs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				79101F3F28E215FE00BFED8B /* SceneDelegate.swift */,
 				79101F4128E215FE00BFED8B /* ViewController.swift */,
 				79101F4328E215FE00BFED8B /* Main.storyboard */,
+				79EC01F028EDE54000F7DE54 /* brigs.swift */,
 				79101F6F28E4AA0D00BFED8B /* MyFriends.swift */,
 				79101F6D28E4A99300BFED8B /* MyDog.swift */,
 				79101F4628E215FF00BFED8B /* Assets.xcassets */,
@@ -265,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				79101F4228E215FE00BFED8B /* ViewController.swift in Sources */,
+				79EC01F128EDE54000F7DE54 /* brigs.swift in Sources */,
 				79101F3E28E215FE00BFED8B /* AppDelegate.swift in Sources */,
 				79101F6E28E4A99300BFED8B /* MyDog.swift in Sources */,
 				79101F7028E4AA0D00BFED8B /* MyFriends.swift in Sources */,
